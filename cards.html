@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Box Model Example</title>
+  <style>
+     body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      background-color: burlywood;
+    }
+    .box {
+      width: 900px;
+      height: 600px;
+      padding: 20px;
+      border: 5px solid #3498db;
+      margin: 30px;
+      background-image: url(sand2.avif);
+      background-position: center;
+      background-position: cover; ;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .subbox {
+      flex: 1;
+     height: 500px;
+      width: 300px;
+      margin: 0 5px;
+      padding: 0px;
+      background: #fffbe6;
+      border: 0 solid #5de622;
+      border-radius: 15px;
+      text-align: center;
+      box-sizing: border-box;
+
+      display: flex;
+        flex-direction: column;
+        border-radius: 15px;
+        
+    }
+
+    .portion {
+       flex: 2;
+        border-top: 0px solid #f1c40f;
+        border-bottom: 0px solid #f1c40f;
+        padding: 5px;
+        
+        text-align: center;
+    }
+    
+    .portion:last-child {
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .sportion {
+        flex: 1;
+        border-left: 1px solid #f1c40f;
+        border-right: 1px solid #f1c40f;
+        padding: 5px;
+        
+        text-align: center;
+    }
+    .lp1 {
+        background-color: pink;
+    }
+    .lp2 {
+        background-color: 
+        orange;
+    }
+    .lp3 {
+        background-color: green;
+    }
+    .tp1 {
+        background-image: url("cold\ mountains.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .tp2 {
+        background-image: url("desert.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .tp3 {
+        background-image: url(trees.webp);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .tp1, .tp2, .tp3 {
+        border-radius: 15px 15px 0 0;
+    }
+    .lp1, .lp2, .lp3 {
+        border-radius: 0 0 15px 15px;
+    }
+    .pgraph2 {
+        font-weight: bold;
+    }
+    .mountain {
+         color: pink;
+    }
+    .desert {
+        color: orange;
+    }
+    .trees {
+        color: green;
+    }
+
+    
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="subbox">
+        <div class="portion tp1">top1</div>
+        <div class="portion md1">
+            <p class="pgraph1 mountain">4 days ago</p>
+            <p class="pgraph2">Post One</p>
+        </div>
+        <div class="portion lp1">
+            <div class="sportion">4TH   READ</div>
+            <div class="sportion">5123 VIEWS</div>
+            <div class="sportion">32 COMMENTS</div>
+        </div>
+    </div>
+    <div class="subbox">
+        <div class="portion tp2">top2</div>
+        <div class="portion md2">
+            <p class="pgraph1 desert">1 week ago</p>
+            <p class="pgraph2">Post Two</p>
+        </div>
+        <div class="portion lp2">
+            <div class="sportion">4TH READ</div>
+            <div class="sportion">5123 VIEWS</div>
+            <div class="sportion">32 COMMENTS</div>
+        </div>
+    </div>
+    <div class="subbox">
+        <div class="portion tp3">top3</div>
+        <div class="portion md3">
+            <p class="pgraph1 trees">3 weeks ago</p>
+            <p class="pgraph2">Post Three</p>
+        </div>
+        <div class="portion lp3">
+            <div class="sportion">7TH READ</div>
+            <div class="sportion">7152 VIEWS</div>
+            <div class="sportion">21 COMMENTS
+            </div>
+        </div>
+    </div>
+  </div>
+</body>
+</html>
